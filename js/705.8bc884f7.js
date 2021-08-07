@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkusopa"]=self["webpackChunkusopa"]||[]).push([[705],{8705:(n,s,u)=>{u.r(s),u.d(s,{default:()=>a});var e=u(3673);const l=(0,e.Wm)("h1",null,"Player Aids",-1);function r(n,s){return(0,e.wg)(),(0,e.j4)("div",null,[l])}const t={};t.render=r;const a=t}}]);
