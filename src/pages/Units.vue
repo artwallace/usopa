@@ -5,7 +5,7 @@
             <div
                 v-for="(unit, idx) in units"
                 :key="idx">
-                <unit
+                <unit-card
                     :unit="unit"
                     :id="idx"
                     @click="this.$router.push(`/unit/${idx}`)" />
@@ -16,7 +16,7 @@
 
 <script>
     import { inject } from 'vue';
-    import Unit from '../components/Unit.vue';
+    import UnitCard from '../components/UnitCard.vue';
 
     export default {
         name: 'Units',
@@ -29,7 +29,7 @@
             }
         },
         components: {
-            Unit
+            UnitCard
         }
     }
 </script>
