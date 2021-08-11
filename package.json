@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.16.1",
     "quasar": "^2.0.0"
   },
   "devDependencies": {
@@ -20,9 +20,9 @@
     "@quasar/app": "^3.0.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-vue": "^7.0.0",
+    "eslint-plugin-vue": "^7.16.0",
     "eslint-webpack-plugin": "^2.4.0",
-    "workbox-webpack-plugin": "^6.2.0"
+    "workbox-webpack-plugin": "^6.2.3"
   },
   "browserslist": [
     "last 10 Chrome versions",
