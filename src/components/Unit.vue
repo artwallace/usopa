@@ -1,5 +1,6 @@
 <template>
-  <q-card class="unit-card bg-blue-grey-9">
+  <q-card class="unit-card bg-blue-grey-9 cursor-pointer q-hoverable" v-ripple>
+    <span class="q-focus-helper" />
     <img :src="unit.image" :alt="unit.name">
 
     <q-card-section>
@@ -15,7 +16,9 @@
 
 <script>
     export default {
-        props: ['unit']
+      setup() {
+      },
+      props: ['unit', 'id']
     }
 </script>
 

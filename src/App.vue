@@ -3,9 +3,14 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+  import { defineComponent, provide } from 'vue';
+  import appdb from './store/appdb';
 
-export default defineComponent({
-  name: 'App'
-})
+  export default defineComponent({
+    name: 'App',
+
+    setup() {
+      provide('appdb', appdb)
+    }
+  })
 </script>
