@@ -12,7 +12,8 @@ const routes = [
     path: '/aids',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/PlayerAids.vue') }
+      { path: '', component: () => import('pages/PlayerAids.vue') },
+      { path: '/aids/combat', component: () => import('pages/CombatResolution.vue') }
     ]
   },
 
@@ -20,15 +21,8 @@ const routes = [
     path: '/units',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Units.vue') }
-    ]
-  },
-
-  {
-    path: '/unit/:id',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/UnitViewer.vue') }
+      { path: '', component: () => import('pages/Units.vue') },
+      { path: '/units/:id', component: () => import('pages/UnitViewer.vue') }
     ]
   },
 
