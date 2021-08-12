@@ -24,11 +24,19 @@ register(process.env.SERVICE_WORKER_FILE, {
   },
 
   updatefound (/* registration */) {
-    // console.log('New content is downloading.')
+    console.log('service worker: updatefound')
   },
 
   updated (/* registration */) {
-    // console.log('New content is available; please refresh.')
+    console.log('service worker: updated')
+    
+    caches.keys().then(function(names) {
+      for (let name of names) caches.delete(name);
+    });
+
+    setTimeout(() => {
+      window.location.reload()
+    }, 1000)
   },
 
   offline () {
