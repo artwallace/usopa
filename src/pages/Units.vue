@@ -8,7 +8,7 @@
                 <unit-card
                     :unit="unit"
                     :id="idx"
-                    @click="this.$router.push(`/units/${idx}`)" />
+                    @click="this.$router.push({ name: 'UnitsViewer', params: { id: idx } })" />
             </div>
         </div>
     </div>

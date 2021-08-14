@@ -21,8 +21,8 @@ const routes = [
     path: '/units',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Units.vue') },
-      { path: '/units/:id', component: () => import('pages/UnitViewer.vue') }
+      { path: '', name: 'Units', component: () => import('pages/Units.vue') },
+      { path: '/units/:id', name: 'UnitsViewer', component: () => import('pages/UnitViewer.vue') }
     ]
   },
 

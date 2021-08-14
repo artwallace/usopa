@@ -4,7 +4,7 @@
         <img class="unitlogo" :src="unit.image" :alt="unit.name" />
     </div>
     <q-page-sticky position="top-left" :offset="[18, 18]">
-        <q-btn fab icon="arrow_back" color="primary" @click="this.$router.push('/units')" />
+        <q-btn fab icon="arrow_back" color="primary" @click="this.$router.push({ name: 'Units' })" />
     </q-page-sticky>
 </template>
 
