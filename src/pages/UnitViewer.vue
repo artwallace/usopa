@@ -1,10 +1,10 @@
 <template>
     <div class="text-center">
         <h5 class="text-h5 text-center">{{ unit.name }}</h5>
-        <img :src="unit.image" :alt="unit.name">
+        <img class="unitlogo" :src="unit.image" :alt="unit.name" />
     </div>
     <q-page-sticky position="top-left" :offset="[18, 18]">
-        <q-btn fab icon="arrow_back" color="primary" @click="this.$router.push(`/units`)" />
+        <q-btn fab icon="arrow_back" color="primary" @click="this.$router.push('/units')" />
     </q-page-sticky>
 </template>
 
@@ -27,3 +27,9 @@
         }
     }
 </script>
+
+<style>
+.unitlogo {
+  width: 90vw;
+  max-width: 1000px; }
+</style>
