@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkusopa"]=self["webpackChunkusopa"]||[]).push([[171],{2171:(e,t,n)=>{n.r(t),n.d(t,{default:()=>a});var s=n(3673),u=n(2323);const c={class:"text-h5 text-center"};function o(e,t,n,o,r,a){return(0,s.wg)(),(0,s.iD)("div",null,[(0,s._)("h5",c,(0,u.zw)(o.name),1)])}const r={setup(){const e="About";return{name:e}},components:{}};r.render=o;const a=r}}]);
