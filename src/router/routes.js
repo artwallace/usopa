@@ -12,8 +12,8 @@ const routes = [
     path: '/aids',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/PlayerAids.vue') },
-      { path: '/aids/combat', component: () => import('pages/CombatResolution.vue') }
+      { path: '', name: 'PlayerAids', component: () => import('pages/PlayerAids.vue') },
+      { path: '/aids/combat', name: 'CombatResolution', component: () => import('pages/CombatResolution.vue') }
     ]
   },
 
@@ -27,10 +27,34 @@ const routes = [
   },
 
   {
+    path: '/equipment',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', name: 'Equipment', component: () => import('pages/Equipment.vue') }
+    ]
+  },
+
+  {
+    path: '/vehicles',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', name: 'Vehicles', component: () => import('pages/Vehicles.vue') }
+    ]
+  },
+
+  {
     path: '/lists',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Lists.vue') }
+      { path: '', name: 'Lists', component: () => import('pages/Lists.vue') }
+    ]
+  },
+
+  {
+    path: '/about',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', name: 'About', component: () => import('pages/About.vue') }
     ]
   },
 

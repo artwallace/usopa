@@ -7,7 +7,7 @@
 <script>
 export default {
     setup() {
-        const name = 'List';
+        const name = 'Vehicles';
         
         return {
             name

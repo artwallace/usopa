@@ -1,18 +1,28 @@
 <template>
-  <q-page class="flex flex-center">
-    <!-- <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    > -->
-    <h1>Main</h1>
-  </q-page>
+    <!--
+    <q-page class="flex flex-center">
+        <img
+            alt="Quasar logo"
+            src="~assets/quasar-logo-vertical.svg"
+            style="width: 200px; height: 200px"
+            >
+    </q-page>
+    -->
+    <div>
+        <h5 class="text-h5 text-center">{{ name }}</h5>
+    </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'PageIndex'
-})
+export default {
+    setup() {
+        const name = 'Main';
+        
+        return {
+            name
+        }
+    },
+    components: {
+    }
+}
 </script>

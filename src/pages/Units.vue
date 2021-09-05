@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h5 class="text-h5 text-center">Units</h5>
+        <h5 class="text-h5 text-center">{{ name }}</h5>
         <div class="q-pa-md row items-start q-gutter-md">
             <div
                 v-for="(unit, idx) in units"
@@ -19,12 +19,13 @@
     import UnitCard from '../components/UnitCard.vue';
 
     export default {
-        name: 'Units',
         setup() {
+            const name = 'Units';
             const appdb = inject('appdb');
             const units = appdb.appdb.units;
 
             return {
+                name,
                 units
             }
         },
