@@ -1,1 +1,0 @@
-"use strict";(self["webpackChunkusopa"]=self["webpackChunkusopa"]||[]).push([[280],{4280:(e,t,n)=>{n.r(t),n.d(t,{default:()=>o});var s=n(3673),u=n(2323);const c={class:"text-h5 text-center"};function r(e,t,n,r,a,o){return(0,s.wg)(),(0,s.iD)("div",null,[(0,s._)("h5",c,(0,u.zw)(r.name),1)])}const a={setup(){const e="Lists";return{name:e}},components:{}};a.render=r;const o=a}}]);
