@@ -14,8 +14,8 @@
     "@quasar/extras": "^1.16.11",
     "core-js": "^3.37.1",
     "quasar": "^2.16.4",
-    "vue": "^3.4.29",
-    "vue-router": "^4.3.3"
+    "vue": "^3.4.30",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.7",
