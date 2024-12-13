@@ -11,18 +11,18 @@
     "build": "quasar build -m pwa"
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.13",
+    "@quasar/extras": "^1.16.15",
     "core-js": "^3.39.0",
-    "quasar": "^2.17.3",
+    "quasar": "^2.17.4",
     "vue": "^3.5.13",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",
-    "@quasar/app-webpack": "^3.15.0",
-    "eslint": "^9.15.0",
+    "@quasar/app-webpack": "^4.0.1",
+    "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-vue": "^9.31.0",
+    "eslint-plugin-vue": "^9.32.0",
     "eslint-webpack-plugin": "^4.2.0",
     "workbox-webpack-plugin": "^7.3.0"
   },
